@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: busynginx
+  name: prod/busynginx
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
