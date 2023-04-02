@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: test-app-3
-  namespace: prod
+  name: test-app-2
+  namespace: infra
   labels:
-    app.kubernetes.io/name:  test-app-3
+    app.kubernetes.io/name:  test-app-2
 spec:
   selector:
     matchLabels:
-      app.kubernetes.io/name:  test-app-3
+      app.kubernetes.io/name:  test-app-2
   replicas: 1
   template:
     metadata:
       labels:
-        app.kubernetes.io/name:  test-app-3
+        app.kubernetes.io/name:  test-app-2
     spec:
       containers:
       - name: test-app

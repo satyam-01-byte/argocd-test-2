@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-test-4
+  namespace: prod  
+  labels:
+    app.kubernetes.io/name:  nginx-test-4
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name:  nginx-test-4
+  replicas: 1
+  template:
+    metadata:
+      name: nginx-test-4
+      namespace: prod
+      labels:
+        app.kubernetes.io/name:  nginx-test-4
+    spec:
+      containers:
+      - name: biz-nginx-server
+        image: nginx
+        imagePullPolicy: Always
+        command: []
+        resources:
+          limits:
+            memory: 50.0Mi
+            cpu: 1.0
+          requests:
+            memory: 50.0Mi
+            cpu: 1.0
