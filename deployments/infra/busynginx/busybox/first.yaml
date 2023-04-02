@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: infra/busynginx/busybox/first
+  name: infra-busynginx-busybox-first
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io

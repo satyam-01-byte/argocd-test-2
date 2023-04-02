@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: prod/busynginx/busybox
+  name: prod-busynginx-busybox
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
