@@ -15,8 +15,8 @@ spec:
     spec:
       project: default
       source:
-        # directory:
-        #   recurse: true
+        directory:
+          recurse: true
         repoURL: https://github.com/satyam-01-byte/argocd-test-2.git
         targetRevision: HEAD
         path: '{{path}}'
