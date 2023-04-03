@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-app-3
+  namespace: prod
+  labels:
+    app.kubernetes.io/name:  test-app-3
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name:  test-app-3
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name:  test-app-3
+    spec:
+      containers:
+      - name: test-app
+        image: busybox
+        imagePullPolicy: Always
+        command: ["sh","-c"]
+        args:
+          - "sleep 3600"
+        resources:
+          limits:
+            memory: 50.0Mi
+            cpu: 0.1
+          requests:
+            memory: 50.0Mi
+            cpu: 0.1
