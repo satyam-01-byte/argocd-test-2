@@ -8,7 +8,7 @@ spec:
       repoURL: https://github.com/satyam-01-byte/argocd-test-2.git
       revision: HEAD
       directories:
-      - path: deployments/*/*/*
+      - path: deployments/*/*/*/*
   template:
     metadata:
       name: '{{path.basename}}'
