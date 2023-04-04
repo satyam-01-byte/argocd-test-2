@@ -14,8 +14,6 @@ spec:
     helm:
       valueFiles:
       - values.yaml
-    # path: deployments/infra/busynginx/nginx/first/
-    #repoURL: https://github.com/satyam-01-byte/argocd-test-2.git
-    path: bitnami/nginx
-    repoURL: https://charts.bitnami.com/bitnami
+    path: first
+    repoURL: https://github.com/satyam-01-byte/argocd-test-2.git
     targetRevision: HEAD
