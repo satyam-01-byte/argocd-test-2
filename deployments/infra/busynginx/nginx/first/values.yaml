@@ -1,6 +1,4 @@
 image:
-  repository: bitnami/nginx
-  tag: latest
   pullPolicy: Always
 
 resources:
