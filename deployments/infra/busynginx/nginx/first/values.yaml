@@ -11,14 +11,14 @@ resources:
     memory: 50.0Mi
     cpu: 1.0
 
-nameOverride: nginx-test-1
+nameOverride: nginx-test-7
 namespaceOverride: infra
 
 labels: 
-  app.kubernetes.io/name: nginx-test-1  
+  app.kubernetes.io/name: nginx-test-7  
 
 nodeSelector:
-  app.kubernetes.io/name: nginx-test-1
+  app.kubernetes.io/name: nginx-test-7
 
 podLabels:
-  app.kubernetes.io/name: nginx-test-1
+  app.kubernetes.io/name: nginx-test-7
