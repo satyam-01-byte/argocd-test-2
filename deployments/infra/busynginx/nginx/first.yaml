@@ -11,6 +11,9 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
+    repoURL: https://bitnami-labs.github.io/sealed-secrets
+    targetRevision: 2.8.1
+    chart: sealed-secrets
     helm:
       releaseName: sealed-secrets
       valueFiles:
@@ -18,7 +21,5 @@ spec:
       path: deployments/infra/busynginx/nginx/first
       repoURL: https://github.com/satyam-01-byte/argocd-test-2.git
       targetRevision: HEAD
-    repoURL: https://bitnami-labs.github.io/sealed-secrets
-    targetRevision: 2.8.1
-    chart: sealed-secrets
+      ref: values
     
