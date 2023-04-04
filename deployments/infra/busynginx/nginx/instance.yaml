@@ -1,0 +1,31 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: infra-busynginx-nginx-instance
+spec:
+  generators:
+  - git:
+      repoURL: https://github.com/satyam-01-byte/argocd-test-2.git
+      revision: HEAD
+      directories:
+      - path: deployments/*/*/*
+  template:
+    metadata:
+      name: '{{path.basename}}'
+    spec:
+      project: default
+      source:
+        # directory:
+        #   recurse: true
+        repoURL: https://github.com/satyam-01-byte/argocd-test-2.git
+        targetRevision: HEAD
+        path: '{{path}}'
+      destination:
+        server: https://kubernetes.default.svc
+        namespace: '{{path.basename}}'
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
+        syncOptions:
+          - CreateNamespace=true
