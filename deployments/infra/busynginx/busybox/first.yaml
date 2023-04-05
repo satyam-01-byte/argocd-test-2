@@ -12,8 +12,8 @@ spec:
   project: default
   sources:
   - repoURL: https://prometheus-community.github.io/helm-charts
-    targetRevision: 20.1.0
-    chart: prometheus
+    targetRevision: 45.9.0
+    chart: kube-prometheus-stack
     helm:
       valueFiles:
       - $values/deployments/infra/busynginx/busybox/first/values.yaml
