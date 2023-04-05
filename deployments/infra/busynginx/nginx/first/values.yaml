@@ -1,6 +1,8 @@
 image:
   pullPolicy: Always
 
+replicaCount: 1
+
 resources:
   limits:
     memory: 50.0Mi
@@ -18,5 +20,5 @@ commonLabels:
 nodeSelector:
   app.kubernetes.io/name: nginx-test-7
 
-# podLabels:
-#   app.kubernetes.io/name: nginx-test-7
+podLabels:
+  app.kubernetes.io/name: nginx-test-7
