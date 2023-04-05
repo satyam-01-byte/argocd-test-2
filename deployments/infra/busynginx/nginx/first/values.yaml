@@ -1,6 +1,6 @@
 image:
-  registry: docker.io
-  repository: bitnami/nginx
+  # registry: docker.io
+  # repository: bitnami/nginx
   pullPolicy: Always
 
 resources:
