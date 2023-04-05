@@ -14,11 +14,11 @@ resources:
 fullnameOverride: nginx-test-7
 namespaceOverride: infra
 
-labels: 
-  app.kubernetes.io/name: nginx-test-7  
+# labels: 
+#   app.kubernetes.io/name: nginx-test-7  
 
-nodeSelector:
-  app.kubernetes.io/name: nginx-test-7
+# nodeSelector:
+#   app.kubernetes.io/name: nginx-test-7
 
-podLabels:
-  app.kubernetes.io/name: nginx-test-7
+# podLabels:
+#   app.kubernetes.io/name: nginx-test-7
