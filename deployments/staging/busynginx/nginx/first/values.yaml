@@ -11,14 +11,14 @@ resources:
     memory: 50.0Mi
     cpu: 1.0
 
-fullnameOverride: nginx-test-1
-namespaceOverride: infra
+fullnameOverride: nginx-test-5
+namespaceOverride: staging
 
 commonLabels: 
-  app.kubernetes.io/name: nginx-test-1  
+  app.kubernetes.io/name: nginx-test-5  
 
 nodeSelector:
-  app.kubernetes.io/name: nginx-test-1
+  app.kubernetes.io/name: nginx-test-5
 
 # podLabels:
 #   app.kubernetes.io/name: nginx-test-7
