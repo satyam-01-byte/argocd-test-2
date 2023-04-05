@@ -1,23 +1,24 @@
 image:
+  registry: docker.io
+  repository: bitnami/nginx
   pullPolicy: Always
 
-# resources:
-#   limits:
-#     memory: 50.0Mi
-#     cpu: 1.0
-#   requests:
-#     memory: 50.0Mi
-#     cpu: 1.0
+resources:
+  limits:
+    memory: 50.0Mi
+    cpu: 1.0
+  requests:
+    memory: 50.0Mi
+    cpu: 1.0
 
-nameOverride: sealed-secrets #nginx-test-7
-namespace: infra
-# namespaceOverride: infra
+nameOverride: nginx-test-7
+namespaceOverride: infra
 
-# labels: 
-#   app.kubernetes.io/name: nginx-test-7  
+labels: 
+  app.kubernetes.io/name: nginx-test-7  
 
-# nodeSelector:
-#   app.kubernetes.io/name: nginx-test-7
+nodeSelector:
+  app.kubernetes.io/name: nginx-test-7
 
-# podLabels:
-#   app.kubernetes.io/name: nginx-test-7
+podLabels:
+  app.kubernetes.io/name: nginx-test-7
