@@ -6,10 +6,10 @@ image:
 resources:
   limits:
     memory: 50.0Mi
-    cpu: 1.0
+    cpu: 1m
   requests:
     memory: 50.0Mi
-    cpu: 1.0
+    cpu: 1m
 
 fullnameOverride: test-app-1
 namespaceOverride: infra
