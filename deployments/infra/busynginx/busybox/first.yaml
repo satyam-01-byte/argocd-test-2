@@ -11,9 +11,9 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   sources:
-  - repoURL: https://prometheus-community.github.io/helm-charts
-    targetRevision: 45.9.0
-    chart: kube-prometheus-stack
+  - repoURL: https://charts.bitnami.com/bitnami
+    targetRevision: 15.3.0
+    chart: wordpress
     helm:
       valueFiles:
       - $values/deployments/infra/busynginx/busybox/first/values.yaml
