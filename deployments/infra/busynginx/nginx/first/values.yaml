@@ -14,11 +14,11 @@ resources:
 fullnameOverride: nginx-test-1
 namespaceOverride: infra
 
-commonLabels: 
-  app.kubernetes.io/name: nginx-test-1  
+# commonLabels: 
+#   app.kubernetes.io/name: nginx-test-1  
 
-nodeSelector:
-  app.kubernetes.io/name: nginx-test-1
+# nodeSelector:
+#   app.kubernetes.io/name: nginx-test-1
 
 # podLabels:
-#   app.kubernetes.io/name: nginx-test-7
+#   app.kubernetes.io/name: nginx-test-1

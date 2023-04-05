@@ -14,11 +14,11 @@ resources:
 fullnameOverride: nginx-test-4
 namespaceOverride: prod
 
-commonLabels: 
-  app.kubernetes.io/name: nginx-test-4  
+# commonLabels: 
+#   app.kubernetes.io/name: nginx-test-4  
 
-nodeSelector:
-  app.kubernetes.io/name: nginx-test-4
+# nodeSelector:
+#   app.kubernetes.io/name: nginx-test-4
 
 # podLabels:
-#   app.kubernetes.io/name: nginx-test-7
+#   app.kubernetes.io/name: nginx-test-4

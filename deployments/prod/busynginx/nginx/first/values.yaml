@@ -14,11 +14,11 @@ resources:
 fullnameOverride: nginx-test-3
 namespaceOverride: prod
 
-commonLabels: 
-  app.kubernetes.io/name: nginx-test-3  
+# commonLabels: 
+#   app.kubernetes.io/name: nginx-test-3  
 
-nodeSelector:
-  app.kubernetes.io/name: nginx-test-3
+# nodeSelector:
+#   app.kubernetes.io/name: nginx-test-3
 
 # podLabels:
-#   app.kubernetes.io/name: nginx-test-7
+#   app.kubernetes.io/name: nginx-test-3

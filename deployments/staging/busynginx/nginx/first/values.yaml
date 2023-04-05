@@ -14,11 +14,11 @@ resources:
 fullnameOverride: nginx-test-5
 namespaceOverride: staging
 
-commonLabels: 
-  app.kubernetes.io/name: nginx-test-5  
+# commonLabels: 
+#   app.kubernetes.io/name: nginx-test-5  
 
-nodeSelector:
-  app.kubernetes.io/name: nginx-test-5
+# nodeSelector:
+#   app.kubernetes.io/name: nginx-test-5
 
 # podLabels:
-#   app.kubernetes.io/name: nginx-test-7
+#   app.kubernetes.io/name: nginx-test-5
