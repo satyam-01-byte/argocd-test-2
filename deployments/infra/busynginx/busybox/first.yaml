@@ -10,7 +10,14 @@ spec:
     namespace: argocd
     server: https://kubernetes.default.svc
   project: default
-  source:
-    path: deployments/infra/busynginx/busybox/first
-    repoURL: https://github.com/satyam-01-byte/argocd-test-2.git
+  sources:
+  - repoURL: https://prometheus-community.github.io/helm-charts
+    targetRevision: 20.1.0
+    chart: prometheus
+    helm:
+      valueFiles:
+      - $values/deployments/infra/busynginx/busybox/first/values.yaml
+  - repoURL: https://github.com/satyam-01-byte/argocd-test-2.git
     targetRevision: HEAD
+    ref: values
+    
