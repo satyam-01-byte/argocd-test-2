@@ -11,14 +11,14 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   sources:
-    repoURL: https://charts.bitnami.com/bitnami
+  - repoURL: https://charts.bitnami.com/bitnami
     targetRevision: 13.2.33
     chart: nginx
     helm:
       valueFiles:
       - deployments/infra/busynginx/nginx/first/values.yaml
     # path: deployments/infra/busynginx/nginx/first
-    repoURL: https://github.com/satyam-01-byte/argocd-test-2.git
+  - repoURL: https://github.com/satyam-01-byte/argocd-test-2.git
     targetRevision: HEAD
     ref: values
     
