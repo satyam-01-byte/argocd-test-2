@@ -14,8 +14,8 @@ resources:
 fullnameOverride: nginx-test-2
 namespaceOverride: infra
 
-# commonLabels: 
-#   app.kubernetes.io/name: nginx-test-2  
+commonLabels: 
+  app.kubernetes.io/name: nginx-test-2  
 
 # nodeSelector:
 #   app.kubernetes.io/name: nginx-test-2
